@@ -27,8 +27,24 @@ function addTask(){
         deleteTask(newTask);                             // to target the new task
     });
 
+
 }
 // function to delete a task
 function deleteTask(task){
     task.remove(); 
 }
+const divCounter = document.querySelector('#count') // select div with id = count
+                                    // divCounter.childElementCount
+                                    // divCounter.addEventListener()
+function countCards(){
+
+    const newNumber = divCounter.cloneNode(true)    // clone div with id= "count"
+    // const numberCards = tasksContainer.children.length  // count how many child elements in tasksContainer
+    // const numberCards = tasksContainer.getElementsByTagName('*')
+    const numberCards = tasksContainer.childElementCount    // to count the number of immediate children for tasksContainer
+    if(numberCards > 0){
+        console.log(numberCards)
+    }
+}
+countCards(tasksContainer)
+
