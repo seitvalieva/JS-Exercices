@@ -11,6 +11,10 @@ delBtn.addEventListener('click', function() {
     deleteTask(taskCard);
 });   //by clicking on the icon, the function deleteTask will delete a task
 
+const divCounter = document.querySelector('#count') // select div with id = count
+let numberCards = 1
+divCounter.innerHTML = numberCards
+
 
 // function to add a task
 function addTask(){
@@ -26,25 +30,14 @@ function addTask(){
     newDelBtn.addEventListener('click', function(){     //add delete event listener to new task
         deleteTask(newTask);                             // to target the new task
     });
-
+    numberCards++
+    divCounter.innerHTML = numberCards
 
 }
 // function to delete a task
 function deleteTask(task){
     task.remove(); 
+    numberCards--
+    divCounter.innerHTML = numberCards
 }
-const divCounter = document.querySelector('#count') // select div with id = count
-                                    // divCounter.childElementCount
-                                    // divCounter.addEventListener()
-function countCards(){
-
-    const newNumber = divCounter.cloneNode(true)    // clone div with id= "count"
-    // const numberCards = tasksContainer.children.length  // count how many child elements in tasksContainer
-    // const numberCards = tasksContainer.getElementsByTagName('*')
-    const numberCards = tasksContainer.childElementCount    // to count the number of immediate children for tasksContainer
-    if(numberCards > 0){
-        console.log(numberCards)
-    }
-}
-countCards(tasksContainer)
-
+ 
