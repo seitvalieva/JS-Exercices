@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    color: blue;
+    background-color: rgb(68, 68, 143);
+    
+}
+.content{
+    color: whitesmoke;
+    font-family: sans-serif;
+}
