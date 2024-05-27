@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    background-color: grey;
+}
+.title {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;    
+}
+.facebook {
+    background-color: blue;
+}
+.twitter {
+    background-color: lightblue;
+}
+.instagram {
+    background-color: lightcoral;
+}
+.icon i{
+    color: white;
+    font-size: 24px;
+}
