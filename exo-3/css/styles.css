@@ -36,3 +36,10 @@ body{
     background-color: greenyellow;
     
 }
+.animation{
+    /* background-color: red; */
+    height: 160px;
+    width: 160px;
+    transition: transform 2s;
+    transform: rotateZ(360deg);
+}
