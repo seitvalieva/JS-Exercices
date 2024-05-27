@@ -31,23 +31,27 @@ body{
 }
 .icon {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
     width: 100px;    
 }
-.facebook {
+#facebook {
     background-color: blue;
 }
-.twitter {
+#twitter {
     background-color: lightblue;
 }
-.instagram {
+#instagram {
     background-color: lightcoral;
 }
 .icon i{
     color: white;
     font-size: 24px;
+}
+.iconName{
+    font-size: 16px;
 }
 .animation {
     border-radius: 10px;
