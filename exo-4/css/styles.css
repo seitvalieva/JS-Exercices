@@ -51,4 +51,5 @@ body{
 }
 .animation {
     border-radius: 10px;
+    box-shadow: 0px 5px 3px black;
 }
